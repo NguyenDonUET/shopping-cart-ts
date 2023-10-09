@@ -1,4 +1,4 @@
-import { ChangeEvent, ReactElement, memo } from "react";
+import { ChangeEvent, ReactElement } from "react";
 import formatUSDPrice from "../../utils/formatUSDPrice";
 import {
   CartItemType,

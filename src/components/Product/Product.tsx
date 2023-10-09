@@ -1,8 +1,8 @@
-import { ReactElement, memo } from "react";
-import formatUSDPrice from "../../utils/formatUSDPrice";
+import { ReactElement } from "react";
 import { useAppDispatch, useAppSelector } from "../../app/hooks";
 import { addToCart } from "../../features/cart/cartSlice";
 import { ProductType } from "../../features/product/productSlice";
+import formatUSDPrice from "../../utils/formatUSDPrice";
 
 type ProductProps = {
   product: ProductType;
@@ -12,7 +12,6 @@ export default function Product({ product }: ProductProps): ReactElement {
   const dispatch = useAppDispatch();
 
   let inCart = items.some((item) => item.id === product.id);
-  // console.log(inCart);
   return (
     <div className="card bg-white text-slate-800 shadow-xl">
       <figure>
