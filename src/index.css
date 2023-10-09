@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply max-w-4xl mx-auto xl:max-w-6xl;
+}
+
+.text-truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 80px 1fr 40px;
+  grid-template-rows: 1fr 1fr 1fr;
+  @apply gap-x-2 gap-y-1;
+}
